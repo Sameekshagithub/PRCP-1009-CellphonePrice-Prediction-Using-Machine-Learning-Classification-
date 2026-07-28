@@ -1,2 +1,2 @@
 # PRCP-1009-CellphonePrice-Prediction-Using-Machine-Learning-Classification-
-PRCP-1009-CellphonePrice is a DataMites Data Science Capstone Project focused on predicting the price range of mobile phones using Machine Learning. It includes data preprocessing, exploratory data analysis (EDA), model building, model comparison, feature importance analysis, and business insights for accurate price prediction.
+PRCP-1009-CellphonePrice is a DataMites Data Science Capstone Project focused on predicting the price range of mobile phones using Machine Learning. It includes data preprocessing, exploratory data analysis (EDA), model building, model comparison, feature importance analysis, and business insights for accurate price predictions.
