@@ -19,7 +19,7 @@
 **Project Code:** PRCP-1009  
 **Team Code:** PTID-AIE-JUL-26-11142  
 **Project Type:** Machine Learning Classification  
-**Submitted By:** Sameeksha Rai
+**Submitted By:** Sameeksha
 
 </div>
 
