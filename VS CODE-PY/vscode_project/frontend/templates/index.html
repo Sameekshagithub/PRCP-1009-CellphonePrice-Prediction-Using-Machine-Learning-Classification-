@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cellphone Price Prediction &mdash; Flask</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">PRCP-1009 &nbsp;|&nbsp; Cellphone Price Prediction <span>(Flask)</span></div>
+    <div class="container">
+        <h2>Predict the Price Range</h2>
+        <p class="subtitle">Enter the phone's specifications below and the trained
+        {{ model_name }} model will predict its price category.</p>
+        <form action="/predict" method="POST">
+            {% for col in feature_columns %}
+            <div class="field">
+                <label for="{{ col }}">{{ col }}</label>
+                {% if col in binary_fields %}
+                <select name="{{ col }}" id="{{ col }}">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                {% else %}
+                <input type="number" step="any" name="{{ col }}" id="{{ col }}" required>
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="submit-row">
+                <button type="submit">Predict Price Range</button>
+            </div>
+
+            {% if prediction %}
+                {% if prediction.error %}
+                <div class="result error"><strong>Error:</strong> {{ prediction.error }}</div>
+                {% else %}
+                <div class="result">
+                    <strong>Predicted Price Range:</strong> {{ prediction.code }} &mdash; {{ prediction.label }}
+                </div>
+                {% endif %}
+            {% endif %}
+        </form>
+    </div>
+    <footer>PRCP-1009 Data Science Capstone Project &mdash; Flask Frontend</footer>
+</body>
+</html>

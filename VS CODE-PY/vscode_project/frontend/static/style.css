@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0b1d3a;   /* dark blue background */
+    color: #0b1d3a;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #132a54;
+    color: #ffffff;
+    padding: 22px 30px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #ffffff;
+}
+
+.navbar span { color: #9fc0ff; }
+
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: #ffffff;   /* white content card */
+    border-radius: 14px;
+    padding: 35px 45px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+h2 { color: #132a54; margin-top: 0; }
+.subtitle { color: #3a4d73; margin-bottom: 25px; }
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 30px;
+}
+
+.field { display: flex; flex-direction: column; }
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #132a54;
+    margin-bottom: 6px;
+}
+
+input[type="number"], select {
+    padding: 10px 12px;
+    border: 2px solid #b7c6e6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #0b1d3a;
+    background-color: #f4f7fd;
+}
+
+input[type="number"]:focus, select:focus {
+    outline: none;
+    border-color: #132a54;
+    background-color: #ffffff;
+}
+
+.submit-row {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #132a54;
+    color: #ffffff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+button:hover { background-color: #0b1d3a; }
+
+.result {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding: 22px;
+    background-color: #e8f0ff;
+    border-left: 6px solid #132a54;
+    border-radius: 10px;
+    color: #132a54;
+    font-size: 18px;
+}
+
+.result.error {
+    background-color: #fde8e8;
+    border-left-color: #9c2b2b;
+    color: #9c2b2b;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 20px;
+    font-size: 13px;
+}
