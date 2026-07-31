@@ -14,7 +14,7 @@
 
 ---
 
-### 🚀 DataMites AI Engineer Capstone Project
+###  DataMites AI Engineer Capstone Project
 
 **Project Code:** PRCP-1009  
 **Team Code:** PTID-AIE-JUL-26-11142  
